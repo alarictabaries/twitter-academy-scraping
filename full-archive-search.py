@@ -66,8 +66,8 @@ def main():
             json.dump(json_response["data"], outfile, indent=4)
 
         time.sleep(1)
-        if requests_count % 15 == 0:
-            time.sleep(900)
+        if requests_count % 300 == 0:
+            time.sleep(901)
 
 
 if __name__ == "__main__":
